@@ -45,10 +45,12 @@
         .contact-detail { font-size: 18px; margin-bottom: 20px; }
         .contact-link { color: #e67e22; text-decoration: none; font-weight: bold; font-size: 22px; display: inline-block; margin-top: 5px; }
         
-        /* Map Area */
-        .map-container { flex: 1; min-width: 320px; height: 380px; background: #eee; border-radius: 8px; overflow: hidden; }
+        /* Map Box Button Style */
+        .map-container { flex: 1; min-width: 320px; height: 320px; background: #e5e3df; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; border: 2px dashed #0b1d33; }
+        .btn-map { background: #0b1d33; color: white; padding: 12px 25px; font-size: 18px; font-weight: bold; border-radius: 5px; text-decoration: none; margin-top: 15px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .btn-map:hover { background: #1a3a60; }
 
-        /* Fixed WhatsApp Button - Simple Text Design */
+        /* Fixed WhatsApp Button */
         .whatsapp-fixed-btn { position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: white; padding: 15px 25px; font-size: 18px; font-weight: bold; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 8px; transition: 0.3s; }
         .whatsapp-fixed-btn:hover { background-color: #128c7e; transform: translateY(-3px); }
 
@@ -94,14 +96,14 @@
                 <img src="https://unsplash.com" class="property-img" alt="Plots for Sale">
                 <div class="property-info">
                     <div class="property-price">బెస్ట్ ప్రైస్</div>
-                    <h3>ప్రీమియం ఓపెన్ ప్లాట్లు / వెంచర్స్</h3>
+                    <h3>ప్రీมิయం ఓపెన్ ప్లాట్లు / వెంచర్స్</h3>
                     <p>📍 విజయవాడ పరిసర ప్రాంతాలలో పెట్టుబడికి మరియు ఇల్లు కట్టుకోవడానికి అనువైన ప్లాట్లు.</p>
                 </div>
             </div>
             <div class="property-card">
                 <img src="https://unsplash.com" class="property-img" alt="House for Sale">
                 <div class="property-info">
-                    <div class="property-price">అత్యుత్తమ నాణ్యత</div>
+                    <div class="property-price">అत्यుత్తమ నాణ్యత</div>
                     <h3>ఇండిపెండెంట్ ఇళ్లు & అపార్ట్‌మెంట్స్</h3>
                     <p>📍 ఆధునిక వసతులు, విశాలమైన రోడ్లు మరియు ప్రశాంతమైన వాతావరణంలో నిర్మించిన గృహాలు.</p>
                 </div>
@@ -133,20 +135,21 @@
                     </p>
                 </div>
             </div>
+            
+            <!-- Updated Map Container with Direct Button -->
             <div class="map-container">
-                <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <strong style="color: #0b1d33; font-size: 18px;">📍 గూగుల్ మ్యాప్ లొకేషన్</strong>
+                <p style="font-size: 14px; margin-top: 5px; color: #555;">మా ఆఫీస్ రూట్ మ్యాప్ మరియు లొకేషన్ చూడటానికి క్రింది బటన్ క్లిక్ చేయండి.</p>
+                <a href="https://google.com" class="btn-map" target="_blank">
+                    🗺️ Open Google Maps
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- New Fixed WhatsApp Text Button -->
+    <!-- Fixed WhatsApp Text Button -->
     <a href="https://wa.me." class="whatsapp-fixed-btn" target="_blank">
         💬 WhatsApp Chat
     </a>
 
     <footer>
-        &copy; 2026 RAZA PROPERTIES. All Rights Reserved.
-    </footer>
-
-</body>
-</html>
