@@ -48,6 +48,11 @@
         /* Map Area */
         .map-container { flex: 1; min-width: 320px; height: 380px; background: #eee; border-radius: 8px; overflow: hidden; }
 
+        /* Floating WhatsApp Button */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s; }
+        .whatsapp-float:hover { background-color: #128c7e; transform: scale(1.1); }
+        .whatsapp-icon { width: 35px; height: 35px; fill: white; }
+
         /* Footer */
         footer { background: #0b1d33; color: #bcc8d6; text-align: center; padding: 25px; margin-top: 60px; font-size: 15px; border-top: 3px solid #e67e22; }
         
@@ -60,6 +65,7 @@
             .contact-section { padding: 25px; }
             .cta-buttons { flex-direction: column; width: 100%; }
             .btn-call { width: 100%; justify-content: center; }
+            .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; }
         }
     </style>
 </head>
@@ -89,7 +95,7 @@
                 <img src="https://unsplash.com" class="property-img" alt="Plots for Sale">
                 <div class="property-info">
                     <div class="property-price">బెస్ట్ ప్రైస్</div>
-                    <h3>ప్రీమియం ఓపెన్ ప్లాట్లు / వెంచర్స్</h3>
+                    <h3>प्रीमियम ओपन प्लॉट्स / వెంచర్స్</h3>
                     <p>📍 విజయవాడ పరిసర ప్రాంతాలలో పెట్టుబడికి మరియు ఇల్లు కట్టుకోవడానికి అనువైన ప్లాట్లు.</p>
                 </div>
             </div>
@@ -135,9 +141,6 @@
         </div>
     </div>
 
-    <footer>
-        &copy; 2026 RAZA PROPERTIES. All Rights Reserved.
-    </footer>
-
-</body>
-</html>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me." class="whatsapp-float" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 448 512">
