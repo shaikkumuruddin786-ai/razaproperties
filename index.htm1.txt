@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAZA PROPERTIES | Professional Real Estate in Vijayawada</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { color: #333; line-height: 1.6; background-color: #f4f6f9; }
+        
+        /* Navigation Bar */
+        header { background: #0b1d33; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .logo { font-size: 26px; font-weight: bold; color: #f39c12; letter-spacing: 1px; }
+        nav a { color: #fff; text-decoration: none; margin-left: 25px; font-weight: 500; font-size: 16px; transition: 0.3s; }
+        nav a:hover { color: #f39c12; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(11, 29, 51, 0.75), rgba(11, 29, 51, 0.75)), url('https://unsplash.com') no-repeat center center/cover; height: 75vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 48px; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+        .hero p { font-size: 22px; margin-bottom: 30px; color: #f1c40f; max-width: 700px; }
+        .cta-buttons { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+        .btn-call { background: #e67e22; color: #fff; padding: 15px 35px; font-size: 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4); display: inline-flex; align-items: center; gap: 10px; }
+        .btn-call:hover { background: #d35400; transform: translateY(-2px); }
+
+        /* Container & Titles */
+        .container { max-width: 1140px; margin: auto; padding: 60px 20px; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 34px; color: #0b1d33; position: relative; font-weight: 600; }
+        .section-title::after { content: ''; width: 70px; height: 4px; background: #e67e22; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); border-radius: 2px; }
+
+        /* Properties Section */
+        .properties-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .property-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: 0.3s; border: 1px solid #eef2f5; }
+        .property-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .property-img { height: 230px; width: 100%; object-fit: cover; }
+        .property-info { padding: 25px; }
+        .property-price { color: #e67e22; font-size: 24px; font-weight: bold; margin-bottom: 8px; }
+        .property-info h3 { font-size: 19px; margin-bottom: 12px; color: #0b1d33; }
+        .property-info p { color: #666; font-size: 15px; }
+        
+        /* Contact Section */
+        .contact-section { background: #fff; padding: 45px; border-radius: 8px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 40px; border: 1px solid #eef2f5; }
+        .contact-info { flex: 1; min-width: 320px; }
+        .contact-info h3 { margin-bottom: 20px; color: #0b1d33; font-size: 26px; }
+        .contact-info p { margin-bottom: 22px; font-size: 17px; color: #555; }
+        .contact-detail { font-size: 18px; margin-bottom: 20px; }
+        .contact-link { color: #e67e22; text-decoration: none; font-weight: bold; font-size: 22px; display: inline-block; margin-top: 5px; }
+        
+        /* Map Area */
+        .map-container { flex: 1; min-width: 320px; height: 380px; background: #eee; border-radius: 8px; overflow: hidden; }
+
+        /* Footer */
+        footer { background: #0b1d33; color: #bcc8d6; text-align: center; padding: 25px; margin-top: 60px; font-size: 15px; border-top: 3px solid #e67e22; }
+        
+        /* Mobile Responsive */
+        @media(max-width: 768px) { 
+            header { padding: 15px 20px; flex-direction: column; gap: 10px; }
+            nav a { margin: 0 10px; font-size: 15px; }
+            .hero h1 { font-size: 34px; } 
+            .hero p { font-size: 18px; } 
+            .contact-section { padding: 25px; }
+            .cta-buttons { flex-direction: column; width: 100%; }
+            .btn-call { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RAZA PROPERTIES</div>
+        <nav>
+            <a href="#properties">ఆస్తుల వివరాలు</a>
+            <a href="#contact">సంప్రదించండి</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>RAZA PROPERTIES</h1>
+        <p>విజయవాడ మరియు పరిసర ప్రాంతాలలో ఓపెన్ ప్లాట్లు, నివాస గృహాలు, మరియు కమర్షియల్ ప్రాపర్టీల కొనుగోలు మరియు అమ్మకాలకు అత్యంత నమ్మకమైన సంస్థ.</p>
+        <div class="cta-buttons">
+            <a href="tel:+919398762699" class="btn-call">📞 కాల్ చేయండి: 9398762699</a>
+            <a href="tel:+918125092155" class="btn-call" style="background:#27ae60; box-shadow: 0 4px 15px rgba(39, 174, 96, 0.4);">📞 కాల్ చేయండి: 8125092155</a>
+        </div>
+    </section>
+
+    <div class="container" id="properties">
+        <h2 class="section-title">విజయవాడలో అమ్మకానికి ఉన్న ఆస్తులు</h2>
+        <div class="properties-grid">
+            <div class="property-card">
+                <img src="https://unsplash.com" class="property-img" alt="Plots for Sale">
+                <div class="property-info">
+                    <div class="property-price">బెస్ట్ ప్రైస్</div>
+                    <h3>ప్రీమియం ఓపెన్ ప్లాట్లు / వెంచర్స్</h3>
+                    <p>📍 విజయవాడ పరిసర ప్రాంతాలలో పెట్టుబడికి మరియు ఇల్లు కట్టుకోవడానికి అనువైన ప్లాట్లు.</p>
+                </div>
+            </div>
+            <div class="property-card">
+                <img src="https://unsplash.com" class="property-img" alt="House for Sale">
+                <div class="property-info">
+                    <div class="property-price">అత్యుత్తమ నాణ్యత</div>
+                    <h3>ఇండిపెండెంట్ ఇళ్లు & అపార్ట్‌మెంట్స్</h3>
+                    <p>📍 ఆధునిక వసతులు, విశాలమైన రోడ్లు మరియు ప్రశాంతమైన వాతావరణంలో నిర్మించిన గృహాలు.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <h2 class="section-title">ఆఫీస్ అడ్రస్ & లొకేషన్</h2>
+        <div class="contact-section">
+            <div class="contact-info">
+                <h3>మమ్మల్ని సంప్రదించండి</h3>
+                <p>ప్రాపర్టీలకు సంబంధించిన పూర్తి వివరాలు తెలుసుకోవడానికి మరియు సైట్ విజిట్ (Site Visit) కొరకు మా ఆఫీస్‌ని సందర్శించండి లేదా ఫోన్ చేయండి.</p>
+                
+                <div class="contact-detail">
+                    <strong>📱 ఫోన్ నంబర్లు (Click to Call):</strong><br>
+                    <a href="tel:+919398762699" class="contact-link">9398762699</a><br>
+                    <a href="tel:+918125092155" class="contact-link" style="color:#27ae60;">8125092155</a>
+                </div>
+                
+                <div class="contact-detail" style="margin-top: 20px;">
+                    <strong>📍 ఆఫీస్ అడ్రస్:</strong><br>
+                    <p style="margin-top: 5px; font-size: 16px; color: #333; line-height: 1.8;">
+                        <strong>RAZA PROPERTIES</strong><br>
+                        D.No. 40-15-9/5, Ground Floor,<br>
+                        Pramoda Apartment, Nandamuri Road,<br>
+                        Brindavan Colony, Vijayawada,<br>
+                        Andhra Pradesh.
+                    </p>
+                </div>
+            </div>
+            <div class="map-container">
+                <!-- గూగుల్ మ్యాప్ ఇంబెడ్ -->
+                <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 RAZA PROPERTIES. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
