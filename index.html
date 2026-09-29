@@ -6,7 +6,7 @@
     <title>RAZA PROPERTIES | Professional Real Estate in Vijayawada</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
-        body { color: #333; line-height: 1.6; background-color: #f4f6f9; }
+        body { color: #333; line-height: 1.6; background-color: #f4f6f9; padding-bottom: 80px; }
         
         /* Navigation Bar */
         header { background: #0b1d33; color: #fff; padding: 20px 40px; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
@@ -48,10 +48,9 @@
         /* Map Area */
         .map-container { flex: 1; min-width: 320px; height: 380px; background: #eee; border-radius: 8px; overflow: hidden; }
 
-        /* Floating WhatsApp Button */
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: #fff; width: 60px; height: 60px; border-radius: 50%; text-align: center; font-size: 30px; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s; }
-        .whatsapp-float:hover { background-color: #128c7e; transform: scale(1.1); }
-        .whatsapp-icon { width: 35px; height: 35px; fill: white; }
+        /* Fixed WhatsApp Button - Simple Text Design */
+        .whatsapp-fixed-btn { position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: white; padding: 15px 25px; font-size: 18px; font-weight: bold; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; display: flex; align-items: center; gap: 8px; transition: 0.3s; }
+        .whatsapp-fixed-btn:hover { background-color: #128c7e; transform: translateY(-3px); }
 
         /* Footer */
         footer { background: #0b1d33; color: #bcc8d6; text-align: center; padding: 25px; margin-top: 60px; font-size: 15px; border-top: 3px solid #e67e22; }
@@ -65,7 +64,7 @@
             .contact-section { padding: 25px; }
             .cta-buttons { flex-direction: column; width: 100%; }
             .btn-call { width: 100%; justify-content: center; }
-            .whatsapp-float { bottom: 20px; right: 20px; width: 55px; height: 55px; }
+            .whatsapp-fixed-btn { bottom: 15px; right: 15px; padding: 12px 20px; font-size: 16px; }
         }
     </style>
 </head>
@@ -95,7 +94,7 @@
                 <img src="https://unsplash.com" class="property-img" alt="Plots for Sale">
                 <div class="property-info">
                     <div class="property-price">బెస్ట్ ప్రైస్</div>
-                    <h3>प्रीमियम ओपन प्लॉट्स / వెంచర్స్</h3>
+                    <h3>ప్రీమియం ఓపెన్ ప్లాట్లు / వెంచర్స్</h3>
                     <p>📍 విజయవాడ పరిసర ప్రాంతాలలో పెట్టుబడికి మరియు ఇల్లు కట్టుకోవడానికి అనువైన ప్లాట్లు.</p>
                 </div>
             </div>
@@ -135,12 +134,19 @@
                 </div>
             </div>
             <div class="map-container">
-                <!-- గూగుల్ మ్యాప్ ఇంబెడ్ -->
                 <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me." class="whatsapp-float" target="_blank">
-        <svg class="whatsapp-icon" viewBox="0 0 448 512">
+    <!-- New Fixed WhatsApp Text Button -->
+    <a href="https://wa.me." class="whatsapp-fixed-btn" target="_blank">
+        💬 WhatsApp Chat
+    </a>
+
+    <footer>
+        &copy; 2026 RAZA PROPERTIES. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
